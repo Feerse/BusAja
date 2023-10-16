@@ -4,6 +4,8 @@ body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	color: #435334;
+	font-family: Inter;
 }
 
 /* width */
@@ -80,7 +82,24 @@ nav .logo a {
 	padding: 15px;
 	border-radius: 12px;
 }
+.txt-foto-bus1 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	color: var(--white);
+	margin-left: 100px;
+}
 
+.txt-foto-bus1 a {
+	background-color: var(--primary);
+	color: var(--black);
+	text-decoration: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bolder;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 12px;
+}
 .txt-foto-bus a:hover {
 	background-color: #afc994;
 }
@@ -96,6 +115,11 @@ nav .logo a {
 	font-family: 'Inter', sans-serif;
 }
 
+#profil {
+	display: flex;
+	justify-content: center;
+}
+
 .wrapper-form {
 	display: flex;
 	flex-direction: column;
@@ -103,9 +127,36 @@ nav .logo a {
 	align-items: center;
 	border-radius: 10px;
 	background-color: var(--primary);
-	width: 100%;
-	padding: 40px 0;
+	width: fit-content;
+	margin-top: 24px;
+	padding: 32px;
 	box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper-form hr {
+	width: 330px;
+	height: 2px;
+	color: black;
+}
+.wrapper-form td {
+	font-size: 18px;
+}
+.wrapper-form .user {
+	padding: 24px;
+}
+
+/* .inv {
+	visibility: hidden;
+} */
+
+th, td {
+	width:250px;
+	padding:12px
+ 
+}
+
+.wrapper-form table tbody tr td {
+	margin: 12px;
 }
 
 .wrapper-form h1 {
@@ -183,7 +234,7 @@ input[type='submit'] {
 	border: none;
 	background-color: #b1ca97;
 	color: var(--black);
-	padding: 10px;
+	padding: 10px 18px;
 	border-radius: 8px;
 	font-weight: bolder;
 	cursor: pointer;
@@ -395,7 +446,7 @@ footer {
 @media only screen and (max-width: 1100px) {
 	.wrapper-form {
 		padding: 25px;
-		width: auto;
+		width: fit-content;
 	}
 
 	.tiket-bus .heading-cara {
