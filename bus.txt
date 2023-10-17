@@ -3,10 +3,13 @@ Samarinda Lestari Transport. PT
 PO. Bintang Mas
 PO. Bone Indah Jaya
 PO. Jahe Raya
-PT Arafat Jaya Kaltim
+PT. Arafat Jaya Kaltim
 PO. Meranti Etam
+PO. Pontiac Prima Jaya
+PO. Trans Jaya
+PO. Balada Kaltim
+PO. Sapulidi
+PO. Mahakam Express
 
-
-
-
-BusAja Adalah Platform pemesanan tiket Bus online yang bekerjasama dengan beberapa Perusahaan-Perusahaan Bus yang ada di di Samarinda 
+BusAja Adalah Platform pemesanan tiket Bus online yang bekerjasama dengan beberapa Perusahaan-Perusahaan Bus yang ada di Samarinda.
+Memesan tiket bus kini telah menjadi mudah dan nyaman berkat berbagai kemajuan teknologi. Dan seperti bagaimana smartphone telah berkembang dari jaringan telepon rumah tradisional, metode pemesanan lama telah berkembang menjadi pemesanan online. Pelanggan tidak lagi harus berdiri dalam antrian dan naik bus atau menerima apa adanya kursi yang disediakan agen, karena redBus menawarkan seluruh informasi yang dibutuhkan untuk memesan tiket. Jadwal bus, daftar operator, penawaran terbaru, fasilitas yang disediakan, kursi, pelanggan bisa menemukan segalanya di platform redBus, yang dapat diakses dari manapun.
