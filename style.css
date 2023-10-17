@@ -6,6 +6,10 @@ body {
 	box-sizing: border-box;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
 	width: 5px;
@@ -392,7 +396,7 @@ footer {
 	text-align: center;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1250px) {
 	.wrapper-form {
 		padding: 25px;
 	}
@@ -409,6 +413,12 @@ footer {
 
 	.tata-cara .cara {
 		width: 380px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.sosmed p {
+		content-visibility: hidden;
 	}
 
 	.isi-tentang-kami p {
