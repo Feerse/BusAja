@@ -59,7 +59,7 @@
 					<h1 style="margin-bottom: 42px">Pemesanan Tiket</h1>
 					<form>
 						<div class="row">
-							<input type="text" placeholder="Masukkan Asal" />
+							<input id="asal" type="text" placeholder="Masukkan Asal" required/>
 							<label
 								><img
 									alt="home-solid-24"
@@ -67,7 +67,7 @@
 							/></label>
 						</div>
 						<div class="row">
-							<input type="text" placeholder="Masukkan Tujuan" />
+							<input id="tujuan" type="text" placeholder="Masukkan Tujuan" required/>
 							<label
 								><img
 									alt="map-solid-24"
@@ -75,7 +75,7 @@
 							/></label>
 						</div>
 						<div class="row">
-							<input title="date" alt="date" type="date" />
+							<input id="tanggal" title="date" alt="date" type="date" required/>
 							<label>Tanggal Keberangkatan</label
 							><img
 								alt=""
@@ -97,7 +97,7 @@
 										type="radio"
 										id="ac"
 										value="AC"
-										name="acNonAc" />
+										name="acNonAc" required />
 									<label for="ac">AC</label>
 								</div>
 								<div class="flex-row">
@@ -105,7 +105,7 @@
 										type="radio"
 										id="nonAc"
 										value="AC"
-										name="acNonAc" />
+										name="acNonAc" required />
 									<label for="nonAc">Non-AC</label>
 								</div>
 							</div>
@@ -117,12 +117,12 @@
 								style="object-fit: contain" />
 							<div class="col">
 								<label>Jam Keberangkatan</label>
-								<div class="flex-row">
+								<div id="jam" class="flex-row">
 									<input
 										type="radio"
 										id="enam"
 										value="6"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan" required />
 									<label for="enam">06:00</label>
 								</div>
 								<div class="flex-row">
@@ -130,7 +130,7 @@
 										type="radio"
 										id="sepuluh"
 										value="10"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan" required />
 									<label for="sepuluh">10:00</label>
 								</div>
 								<div class="flex-row">
@@ -138,7 +138,7 @@
 										type="radio"
 										id="limaBelas"
 										value="15"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan" required />
 									<label for="limaBelas">15:00</label>
 								</div>
 								<div class="flex-row">
@@ -146,7 +146,7 @@
 										type="radio"
 										id="delapanBelas"
 										value="18"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan" required />
 									<label for="delapanBelas">18:00</label>
 								</div>
 							</div>
