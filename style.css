@@ -395,7 +395,6 @@ footer {
 @media only screen and (max-width: 1100px) {
 	.wrapper-form {
 		padding: 25px;
-		width: auto;
 	}
 
 	.tiket-bus .heading-cara {
@@ -415,59 +414,4 @@ footer {
 	.isi-tentang-kami p {
 		width: 375px;
 	}
-
-	/* 	
-	nav {
-		padding: 0 20px;
-
-	}
-
-
-	
-	.tiket-bus .tata-cara {
-		flex-direction: column;
-		align-items: center;
-		transform: translateX(60px);
-	}
-	.tata-cara .cara {
-		margin-bottom: 20px;
-		width: 21rem;
-		height: 20rem;
-		margin-right: 2px;
-	}
-
-	.tiket-bus .heading-cara {
-		font-size: 1.5rem;
-	}
-
-	.bus-icon,.credit-icon,.search-icon {
-		transform: translateX(-35px);
-	}
-
-	
-	#pemesanan-tiket {
-		margin: 0;
-	}
-	form {
-		padding: 20px;
-	}
-
-	
-
-	section .img-bus {
-		visibility: hidden;
-	}
-
-	.txt-foto-bus {
-		color: black;
-		text-align: center;
-		top: 300px;
-		right: 100PX;
-	}
-
-	#pemesanan-tiket {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-	} */
 }
