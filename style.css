@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: Inter;
+	/* border: 2px greenyellow solid; */
 }
 
 .wrapper {
@@ -454,6 +455,7 @@ input[type='submit']:hover {
 }
 
 .daftar-bus .tiket-bus table {
+	color: var(--black);
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -533,5 +535,13 @@ footer {
 @media only screen and (max-width: 900px) {
 	form {
 		width: auto;
+	}
+
+	.tiket-bus hr {
+		width: unset;
+	}
+
+	.sosmed p {
+		content-visibility: hidden;
 	}
 }
