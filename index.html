@@ -10,15 +10,19 @@
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Hammersmith+One&family=Inter&family=Lemon&family=Poppins&display=swap" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+		<script src="script.js" defer></script>
 	</head>
 
 	<body>
 		<nav>
-			<div class="logo"><a href="#">BusAja</a></div>
+			<div class="logo"><a href="index.html">BusAja</a></div>
 			<div class="user">
-				<a href="#"
-					><img alt="user" src="assets/user-solid-24.png"
-				/></a>
+				<a href="index1.html"
+					><img alt="user" src="assets/user-solid-24.png" />
+				</a>
 			</div>
 		</nav>
 
@@ -59,7 +63,11 @@
 					<h1 style="margin-bottom: 42px">Pemesanan Tiket</h1>
 					<form>
 						<div class="row">
-							<input type="text" placeholder="Masukkan Asal" />
+							<input
+								id="asal"
+								type="text"
+								placeholder="Masukkan Asal"
+								required />
 							<label
 								><img
 									alt="home-solid-24"
@@ -67,7 +75,11 @@
 							/></label>
 						</div>
 						<div class="row">
-							<input type="text" placeholder="Masukkan Tujuan" />
+							<input
+								id="tujuan"
+								type="text"
+								placeholder="Masukkan Tujuan"
+								required />
 							<label
 								><img
 									alt="map-solid-24"
@@ -75,7 +87,12 @@
 							/></label>
 						</div>
 						<div class="row">
-							<input title="date" alt="date" type="date" />
+							<input
+								id="tanggal"
+								title="date"
+								alt="date"
+								type="date"
+								required />
 							<label>Tanggal Keberangkatan</label
 							><img
 								alt=""
@@ -97,7 +114,8 @@
 										type="radio"
 										id="ac"
 										value="AC"
-										name="acNonAc" />
+										name="acNonAc"
+										required />
 									<label for="ac">AC</label>
 								</div>
 								<div class="flex-row">
@@ -105,7 +123,8 @@
 										type="radio"
 										id="nonAc"
 										value="AC"
-										name="acNonAc" />
+										name="acNonAc"
+										required />
 									<label for="nonAc">Non-AC</label>
 								</div>
 							</div>
@@ -117,12 +136,13 @@
 								style="object-fit: contain" />
 							<div class="col">
 								<label>Jam Keberangkatan</label>
-								<div class="flex-row">
+								<div id="jam" class="flex-row">
 									<input
 										type="radio"
 										id="enam"
 										value="6"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan"
+										required />
 									<label for="enam">06:00</label>
 								</div>
 								<div class="flex-row">
@@ -130,7 +150,8 @@
 										type="radio"
 										id="sepuluh"
 										value="10"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan"
+										required />
 									<label for="sepuluh">10:00</label>
 								</div>
 								<div class="flex-row">
@@ -138,7 +159,8 @@
 										type="radio"
 										id="limaBelas"
 										value="15"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan"
+										required />
 									<label for="limaBelas">15:00</label>
 								</div>
 								<div class="flex-row">
@@ -146,7 +168,8 @@
 										type="radio"
 										id="delapanBelas"
 										value="18"
-										name="jamKeberangkatan" />
+										name="jamKeberangkatan"
+										required />
 									<label for="delapanBelas">18:00</label>
 								</div>
 							</div>
@@ -223,20 +246,115 @@
 					</div>
 				</div>
 			</div>
+			<div class="galeri">
+				<div class="tiket-bus">
+					<h1 class="heading-cara">Galeri</h1>
+					<hr />
+					<div class="wrapper">
+						<i id="left" class="fa-solid fa-angle-left"></i>
+						<div class="carousel">
+							<img
+								src="assets/galeri/1.jpg"
+								alt="img"
+								draggable="false" />
+							<img
+								src="assets/galeri/2.jpg"
+								alt="img"
+								draggable="false" />
+							<img
+								src="assets/galeri/3.jpg"
+								alt="img"
+								draggable="false" />
+							<img
+								src="assets/galeri/4.jpg"
+								alt="img"
+								draggable="false" />
+							<img
+								src="assets/galeri/5.jpg"
+								alt="img"
+								draggable="false" />
+							<img
+								src="assets/galeri/6.jpg"
+								alt="img"
+								draggable="false" />
+							<img
+								src="assets/galeri/7.jpg"
+								alt="img"
+								draggable="false" />
+						</div>
+						<i id="right" class="fa-solid fa-angle-right"></i>
+					</div>
+				</div>
+			</div>
+			<div class="daftar-bus">
+				<div class="tiket-bus">
+					<h1 class="heading-cara">Daftar Perusahaan Bus</h1>
+					<hr />
+					<table>
+						<tr>
+							<br />
+							<td style="padding-right: 20px">-</td>
+							<td>PO. Bintang Mas</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Mahakam Express</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Sapulidi</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Balada Kaltim</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Trans Jaya</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Pontiac Prima Jaya</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Meranti Etam</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Bone Indah Jaya</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PT. Arafat Jaya Kaltim</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>PO. Jahe Raya</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 			<div class="tentang-kami">
 				<div class="tiket-bus isi-tentang-kami">
 					<h1 class="heading-cara">Tentang Kami</h1>
 					<hr />
 					<br />
 					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Minus ipsa velit, accusamus explicabo obcaecati
-						impedit id quidem adipisci cum, maiores voluptas et,
-						veniam soluta earum tempora. Temporibus, molestiae
-						animi. Quod nam quas necessitatibus officiis saepe
-						earum, eaque asperiores alias vero nihil blanditiis
-						perferendis. Consequuntur quibusdam illo aut
-						voluptatibus? Accusantium, alias?
+						BusAja Adalah Platform pemesanan tiket Bus online yang
+						bekerjasama dengan beberapa Perusahaan-Perusahaan Bus
+						yang ada di Samarinda. Memesan tiket bus kini telah
+						menjadi mudah dan nyaman berkat berbagai kemajuan
+						teknologi. Dan seperti bagaimana smartphone telah
+						berkembang dari jaringan telepon rumah tradisional,
+						metode pemesanan lama telah berkembang menjadi pemesanan
+						online. Pelanggan tidak lagi harus berdiri dalam antrian
+						dan naik bus atau menerima apa adanya kursi yang
+						disediakan agen, karena BusAja menawarkan seluruh
+						informasi yang dibutuhkan untuk memesan tiket. Jadwal
+						bus, daftar operator, penawaran terbaru, fasilitas yang
+						disediakan, kursi, pelanggan bisa menemukan segalanya di
+						platform BusAja, yang dapat diakses dari manapun.
 					</p>
 				</div>
 			</div>
