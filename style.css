@@ -9,12 +9,10 @@ body {
 }
 
 .wrapper {
-	padding-top: 30px;
-	/* padding-left: 230px;	 */
 	display: flex;
-	/* max-width: 1200px; */
 	position: relative;
 	margin: 0 32px;
+	margin-top: 30px;
 }
 .wrapper i {
 	top: 50%;
@@ -172,11 +170,6 @@ nav .logo a {
 	justify-content: center;
 	padding: 42px;
 	font-family: 'Inter', sans-serif;
-}
-
-#profil {
-	display: flex;
-	justify-content: center;
 }
 
 .wrapper-form {
@@ -472,7 +465,7 @@ input[type='submit']:hover {
 .isi-tentang-kami p {
 	font-family: Inter;
 	color: var(--black);
-	text-align: center;
+	text-align: justify;
 	margin: auto;
 	line-height: 2;
 	width: 750px;
@@ -512,6 +505,48 @@ footer {
 	text-align: center;
 }
 
+/*
+================
+	PROFILE		
+================
+*/
+
+.profil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.wrapper-profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background-color: var(--primary);
+	width: 75%;
+	height: 75%;
+	padding: 64px;
+	gap: 64px;
+	box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper-profile table tbody tr td {
+	padding: 8px 15px;
+}
+
+/* 
+.wrapper-profile input[type='submit'] {
+	margin-top: 24px;
+} */
+
+/*
+================
+	REPONSIVE			
+================
+*/
+
 @media only screen and (max-width: 1100px) {
 	.tiket-bus .heading-cara {
 		font-size: 1.5rem;
@@ -543,5 +578,9 @@ footer {
 
 	.sosmed p {
 		content-visibility: hidden;
+	}
+
+	.wrapper-profile {
+		width: 85%;
 	}
 }
