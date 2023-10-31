@@ -4,6 +4,79 @@ body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: Inter;
+	/* border: 2px greenyellow solid; */
+}
+
+.wrapper {
+	display: flex;
+	position: relative;
+	margin: 0 32px;
+	margin-top: 30px;
+}
+.wrapper i {
+	top: 50%;
+	height: 44px;
+	width: 44px;
+	color: #343f4f;
+	cursor: pointer;
+	font-size: 1.15rem;
+	position: absolute;
+	text-align: center;
+	line-height: 44px;
+	background: var(--primary);
+	border-radius: 50%;
+	transform: translateY(-50%);
+	transition: transform 0.1s linear;
+}
+.wrapper i:active {
+	transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover {
+	background: #c0d5aa;
+}
+.wrapper i:first-child {
+	/* left: 210px; */
+	/* display: none; */
+	left: 2.5%;
+}
+.wrapper i:last-child {
+	/* right: -22px; */
+	right: 2.5%;
+}
+.wrapper .carousel {
+	font-size: 0px;
+	cursor: pointer;
+	overflow: hidden;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+}
+.carousel.dragging {
+	cursor: grab;
+	scroll-behavior: auto;
+}
+.carousel.dragging img {
+	pointer-events: none;
+}
+.carousel img {
+	height: 340px;
+	object-fit: cover;
+	user-select: none;
+	margin-left: 14px;
+	width: calc(100% / 3);
+}
+.carousel img:first-child {
+	margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+	.carousel img {
+		width: calc(100% / 2);
+	}
+}
+@media screen and (max-width: 550px) {
+	.carousel img {
+		width: 100%;
+	}
 }
 
 /* width */
@@ -55,7 +128,10 @@ nav .logo a {
 	font-family: 'Lemon', cursive;
 	font-size: 24px;
 }
-
+.swiper {
+	width: 600px;
+	height: 300px;
+}
 .img-bus {
 	height: 90vh;
 	width: 100%;
@@ -104,9 +180,30 @@ nav .logo a {
 	border-radius: 10px;
 	background-color: var(--primary);
 	width: 100%;
-	padding: 40px 0;
+	margin-top: 24px;
+	padding: 64px;
 	box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
 }
+
+.wrapper-form hr {
+	width: 330px;
+	height: 2px;
+	color: black;
+}
+.wrapper-form td {
+	font-size: 18px;
+}
+.wrapper-form .user {
+	padding: 24px;
+}
+
+/* .inv {
+	visibility: hidden;
+} */
+
+/* .wrapper-form table tbody tr td {
+	margin: 12px;
+} */
 
 .wrapper-form h1 {
 	font-size: 2rem;
@@ -119,6 +216,7 @@ form {
 	gap: 24px;
 	justify-content: center;
 	position: relative;
+	width: 50%;
 }
 
 form p {
@@ -183,7 +281,7 @@ input[type='submit'] {
 	border: none;
 	background-color: #b1ca97;
 	color: var(--black);
-	padding: 10px;
+	padding: 10px 18px;
 	border-radius: 8px;
 	font-weight: bolder;
 	cursor: pointer;
@@ -201,7 +299,7 @@ input[type='submit']:hover {
 	justify-content: center;
 	width: 75%;
 	margin: auto;
-	margin-top: 120px;
+	padding-top: 120px;
 }
 /* .cara-pesan .tiket-bus {
 	width: 81.0625rem;
@@ -341,6 +439,21 @@ input[type='submit']:hover {
 	margin-bottom: 20px;
 }
 
+.galeri {
+	padding-top: 120px;
+}
+
+.daftar-bus {
+	padding-top: 120px;
+}
+
+.daftar-bus .tiket-bus table {
+	color: var(--black);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 .tentang-kami {
 	display: flex;
 	justify-content: center;
@@ -352,7 +465,7 @@ input[type='submit']:hover {
 .isi-tentang-kami p {
 	font-family: Inter;
 	color: var(--black);
-	text-align: center;
+	text-align: justify;
 	margin: auto;
 	line-height: 2;
 	width: 750px;
@@ -392,12 +505,49 @@ footer {
 	text-align: center;
 }
 
-@media only screen and (max-width: 1100px) {
-	.wrapper-form {
-		padding: 25px;
-		width: auto;
-	}
+/*
+================
+	PROFILE		
+================
+*/
 
+.profil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.wrapper-profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background-color: var(--primary);
+	width: 75%;
+	height: 75%;
+	padding: 64px;
+	gap: 64px;
+	box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper-profile table tbody tr td {
+	padding: 8px 15px;
+}
+
+/* 
+.wrapper-profile input[type='submit'] {
+	margin-top: 24px;
+} */
+
+/*
+================
+	REPONSIVE			
+================
+*/
+
+@media only screen and (max-width: 1100px) {
 	.tiket-bus .heading-cara {
 		font-size: 1.5rem;
 	}
@@ -415,59 +565,22 @@ footer {
 	.isi-tentang-kami p {
 		width: 375px;
 	}
+}
 
-	/* 	
-	nav {
-		padding: 0 20px;
-
-	}
-
-
-	
-	.tiket-bus .tata-cara {
-		flex-direction: column;
-		align-items: center;
-		transform: translateX(60px);
-	}
-	.tata-cara .cara {
-		margin-bottom: 20px;
-		width: 21rem;
-		height: 20rem;
-		margin-right: 2px;
-	}
-
-	.tiket-bus .heading-cara {
-		font-size: 1.5rem;
-	}
-
-	.bus-icon,.credit-icon,.search-icon {
-		transform: translateX(-35px);
-	}
-
-	
-	#pemesanan-tiket {
-		margin: 0;
-	}
+@media only screen and (max-width: 900px) {
 	form {
-		padding: 20px;
+		width: auto;
 	}
 
-	
-
-	section .img-bus {
-		visibility: hidden;
+	.tiket-bus hr {
+		width: unset;
 	}
 
-	.txt-foto-bus {
-		color: black;
-		text-align: center;
-		top: 300px;
-		right: 100PX;
+	.sosmed p {
+		content-visibility: hidden;
 	}
 
-	#pemesanan-tiket {
-		width: 100%;
-		height: 100%;
-		margin: 0;
-	} */
+	.wrapper-profile {
+		width: 85%;
+	}
 }
